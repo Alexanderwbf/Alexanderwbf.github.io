@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.price{
+    position: relative;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.price__inner{
+    width: 100%;
+    max-width: 72rem;
+    margin: 27rem 0 5rem 25rem;
+
+    @media (max-width: 668px){
+        margin: 27rem auto 5rem;
+    }
+
+    @media (max-width: 575px) {
+        margin: 27rem auto 5rem;
+        text-align: center;
+    }
+}
+
+.price__info{
+    margin-bottom: 7rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.9rem;
+
+    color: @black;
+
+    &::before{
+        content: "";
+        width: 9.6rem;
+        height: .4rem;
+        background-color: @yellow;
+
+        position: absolute;
+        top: -2.5rem;
+        z-index: 1;
+    }
+
+    @media (max-width: 575px) {
+        margin: 0 auto 7rem;
+        width: 278px;
+        font-size: 20px;
+        line-height: 24px;
+
+        &::before{
+            width: 96px;
+            top: -25px;
+            left: 50%;
+        
+            transform: translateX(-50%);
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
